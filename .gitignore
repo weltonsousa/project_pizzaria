@@ -144,6 +144,6 @@ dist
 .svelte-kit
 
 #directory
-tmp/
+/tmp
 
 # End of https://www.toptal.com/developers/gitignore/api/node
