@@ -5,7 +5,7 @@ interface Payload {
   sub: string;
 }
 
-export function IsAuthenticated(req: Request, res: Response, next: NextFunction) {
+export function isAuthenticated(req: Request, res: Response, next: NextFunction) {
 
   const authToken = req.headers.authorization
 

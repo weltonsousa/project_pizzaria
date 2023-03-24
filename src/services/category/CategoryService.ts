@@ -30,6 +30,15 @@ class CategoryService {
 
     return categories;
   }
+
+  async listCategoryId({ category_id }) {
+    const findByCategory = await prismaClient.product.findMany({
+      where: {
+        category_id: category_id
+      }
+    })
+    return findByCategory;
+  }
 }
 
 export { CategoryService }
